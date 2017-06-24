@@ -1,5 +1,6 @@
 include ../blocks/_button.pug
 
+
 block variables
 
 <!DOCTYPE html>
@@ -20,15 +21,24 @@ html(lang="ru")
 		link(rel='stylesheet' href='/bower/bootstrap-grid/dist/bootstrap-grid.min.css')
 		<!-- endbuild -->
 
+		<!-- build: icon font-awesome -->
+		link(rel='stylesheet' href='/bower/font-awesome/css/font-awesome.min.css')
+
+		<!-- bulid:normalize -->
+		link(rel='stylesheet' href='/bower/normalize-css/normalize.css')
+
 		<!-- build:userCss css/user.css -->
 		link(rel='stylesheet' href='/css/main.css')
 		<!-- endbuild -->
 
 		<!--[if lt IE 9]>
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+		
 		<![endif]-->
 
+
 	body
+		include ../blocks/_nav-top.pug
 		block content
 		
 		include ../blocks/_footer.pug

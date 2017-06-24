@@ -1,0 +1,13 @@
+.btn{
+	
+	background-color:$btn-white;
+	line-height: rem(32px);
+	color:$btn-text-color;
+	font-weight: bold;
+	font-size: rem(16px);
+	text-decoration: none;
+	padding: 14px 42px;
+	border-radius:50px;
+	box-shadow:4px 6px 16px $btn-shadow;
+
+}

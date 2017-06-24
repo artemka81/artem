@@ -1,0 +1,9 @@
+extends ./templates/_template.pug
+
+block variables
+	- var title = 'Страница входа'
+
+block content
+	section.login
+	include ./blocks/_form-login.pug
+		

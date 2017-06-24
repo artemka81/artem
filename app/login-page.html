@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Страница входа</title>
+    <meta content="" name="author"/>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="ie=edge" http-equiv="x-ua-compatible"/><!-- build:vendorCss css/vendor.css -->
+    <link rel="stylesheet" href="/bower/bootstrap-grid/dist/bootstrap-grid.min.css"/><!-- endbuild -->
+<!-- build: icon font-awesome -->
+    <link rel="stylesheet" href="/bower/font-awesome/css/font-awesome.min.css"/><!-- bulid:normalize -->
+    <link rel="stylesheet" href="/bower/normalize-css/normalize.css"/><!-- build:userCss css/user.css -->
+    <link rel="stylesheet" href="/css/main.css"/><!-- endbuild -->
+<!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <nav class="nav-top">
+          <div class="nav-top__title"><i class="fa fa-paper-plane" aria-hidden="true"> <a href="/">Супер сайт</a></i></div>
+          <div class="nav-top__login"><a href="#">Регистрация</a></div>
+        </nav>
+      </div>
+    </header>
+    <section class="login"></section>
+    <section class="form-login"> 
+      <form class="form-login-sigin" method="POST" action="#">
+        <div class="form-login-sigin-wrapper center">
+          <h2 class="form-login-sigin__header">Вход на сайт</h2>
+        </div>
+        <div class="form-login-sigin-wrapper column">
+          <div class="form-login-sigin-wrapper__error-head--text">Неверный email или пароль</div>
+          <div class="form-login-sigin-wrapper__error-text"><span> </span>Введите верные данные для входа или воспользуйтесь <a href="#">восстановлением пароля</a>, чтобы войти на сайт.</div>
+        </div>
+        <div class="form-login-sigin-wrapper center">
+          <input class="form-login-sigin__email" type="email" placeholder="E-mail" name="email"/>
+        </div>
+        <div class="form-login-sigin-wrapper center">
+          <input class="form-login-sigin__pass" type="password" placeholder="Пароль" name="password"/>
+        </div>
+        <div class="form-login-sigin-wrapper space-between">
+          <input class="form-login-sigin__checkbox" type="checkbox" name="remember" checked="checked"/>
+          <label class="form-login-sigin__label" for="checkbox">Запомнить меня</label><a class="form-login-sigin__link" href="#">
+             Забыли пароль</a>
+        </div>
+        <div class="form-login-sigin-wrapper center"><a class="btn-primary btn" href="#">Войти</a>
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <p class="footer__copy">© Артём Кихтенко<br/>Сделано с <i class="fa fa-heart" aria-hidden="true"> </i>в  <span><a href="webCademy.ru">WebCademy.ru</a></span> в 2017 году</p>
+    </footer><!-- build:vendorJs js/vendor.js -->
+    <script src="/bower/jquery/dist/jquery.min.js" defer="defer"></script><!-- endbuild -->
+<!-- build:userJs js/user.js -->
+    <script src="/js/main.js" defer="defer"></script><!-- endbuild -->
+  </body>
+</html>

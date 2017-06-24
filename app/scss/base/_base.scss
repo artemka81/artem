@@ -1,4 +1,5 @@
 /* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/open-sans */
+@import "bourbon";
 @import "http://fonts.fontstorage.com/import/opensans.css";
 /*
 	Open Sans, 300, 300 italic, 400, 400 italic, 600, 600 italic, 700, 700 italic, 800, 800 italic
@@ -17,9 +18,14 @@ html {
 } 
 	
 body {
+	min-height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   height: 100%; 
   font-family: 'Open Sans';
   font-weight: 400;
   font-size: 16px;
+  background: $bg-login;
 }
+

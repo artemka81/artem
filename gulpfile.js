@@ -9,6 +9,9 @@ var autoprefixer = require("gulp-autoprefixer");
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 
+// Bourbon
+var bourbon = require('node-bourbon');
+
 
 // Pug
 var pug = require('gulp-pug');
@@ -60,7 +63,9 @@ gulp.task('less', function() {
 gulp.task('scss', function () {
   return gulp.src('./app/scss/main.scss')
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      includePaths: require('node-bourbon').includePaths
+    }).on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['last 4 versions'] }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./app/css/'))
@@ -88,9 +93,9 @@ gulp.task('pug', function() {
   WATCH
 ------------------------------------ */
 gulp.task('watch', function() {
-    gulp.watch('app/less/**/*.less', ['less']);
+    // gulp.watch('app/less/**/*.less', ['less']);
     gulp.watch('app/pug/**/*.pug', ['pug']);
-    // gulp.watch('app/scss/**/*.scss', ['scss']);
+    gulp.watch('app/scss/**/*.scss', ['scss']);
 });	
 
 
@@ -100,8 +105,8 @@ gulp.task('watch', function() {
 ------------------------------------ */
 gulp.task('default', function() {
     runSequence(
-      ['less', 'pug'],
-    	// ['scss', 'pug'],
+      // ['less', 'pug'],
+    	['scss', 'pug'],
     	['server', 'watch']
     )
 });

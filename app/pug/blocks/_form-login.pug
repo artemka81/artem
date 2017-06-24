@@ -1,0 +1,36 @@
+section.form-login 
+	form.form-login-sigin(method="POST" action="#")
+		.form-login-sigin-wrapper.center
+			h2.form-login-sigin__header Вход на сайт
+		//- .form-login-sigin-wrapper
+		//- 	.form-login-sigin-wrapper__error-head Введите пароль
+		//- .form-login-sigin-wrapper
+		//- 	.form-login-sigin-wrapper__error-head Введите email
+		.form-login-sigin-wrapper.column
+			.form-login-sigin-wrapper__error-head--text Неверный email или пароль
+			.form-login-sigin-wrapper__error-text
+				span 
+				| Введите верные данные для входа или воспользуйтесь 
+				a(href="#") восстановлением пароля
+				| , чтобы войти на сайт.
+		.form-login-sigin-wrapper.center
+			input.form-login-sigin__email(
+				type='email',
+				placeholder='E-mail'
+				name='email'
+			)
+		.form-login-sigin-wrapper.center
+			input.form-login-sigin__pass(
+				type='password',
+				placeholder='Пароль'
+				name='password'
+			)
+		.form-login-sigin-wrapper.space-between
+			input.form-login-sigin__checkbox(type='checkbox', name='remember' checked) 
+			label.form-login-sigin__label(for='checkbox')
+				| Запомнить меня
+			a(class="form-login-sigin__link" href='#') 
+				| Забыли пароль
+		.form-login-sigin-wrapper.center
+			+button("Войти", "#")(class="btn-primary")
+			

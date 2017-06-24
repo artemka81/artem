@@ -1,0 +1,19 @@
+.footer{
+		text-align: center;
+		color:$white;
+		line-height: 32px;
+		padding-bottom: 16px;
+		p{
+			i{
+				color:$icon-heard-red;
+				padding-right:4px;
+			}
+			span{
+				font-weight:bold;
+				a{
+					color:$white;
+					text-decoration:none;
+				}
+			}
+		}
+}
