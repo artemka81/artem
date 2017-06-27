@@ -19,13 +19,9 @@ html(lang="ru")
 		
 		<!-- build:vendorCss css/vendor.css -->
 		link(rel='stylesheet' href='/bower/bootstrap-grid/dist/bootstrap-grid.min.css')
-		<!-- endbuild -->
-
-		<!-- build: icon font-awesome -->
 		link(rel='stylesheet' href='/bower/font-awesome/css/font-awesome.min.css')
-
-		<!-- bulid:normalize -->
 		link(rel='stylesheet' href='/bower/normalize-css/normalize.css')
+		<!-- endbuild -->
 
 		<!-- build:userCss css/user.css -->
 		link(rel='stylesheet' href='/css/main.css')
@@ -39,6 +35,7 @@ html(lang="ru")
 
 	body
 		include ../blocks/_nav-top.pug
+		
 		block content
 		
 		include ../blocks/_footer.pug
