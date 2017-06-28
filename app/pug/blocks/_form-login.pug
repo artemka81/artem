@@ -2,11 +2,9 @@ section.form-login
 	form.form-login-sigin(method="POST" action="#")
 		.form-login-sigin-wrapper.center
 			h2.form-login-sigin__header Вход на сайт
-		//- .form-login-sigin-wrapper
-		//- 	.form-login-sigin-wrapper__error-head Введите пароль
-		//- .form-login-sigin-wrapper
-		//- 	.form-login-sigin-wrapper__error-head Введите email
-		.form-login-sigin-wrapper.column
+		.form-login-sigin-wrapper--error.column
+			.form-login-sigin-wrapper__error-head Введите пароль
+			.form-login-sigin-wrapper__error-head Введите email
 			.form-login-sigin-wrapper__error-head--text Неверный email или пароль
 			.form-login-sigin-wrapper__error-text
 				span 

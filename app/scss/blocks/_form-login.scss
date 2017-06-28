@@ -43,12 +43,13 @@
 	}
 }
 
-.form-login-sigin-wrapper{
+.form-login-sigin-wrapper, .form-login-sigin-wrapper--error{
 	text-align: left;
 	font-size: 16px;
 	font-weight: normal;
 	display:flex;
 	margin-bottom:20px;
+	
 	&__error-head, &__error-head--text{
 		width: 100%;
 		background: $bg-login-error-head;
@@ -66,9 +67,13 @@
 		padding: 14px;
 		color:#38505e;
 		line-height: 20px;
-		background: $bg-login-error-text;	
+		background: $bg-login-error-text;
+
 	}
 
+}
+.form-login-sigin-wrapper--error{
+		display: none;
 }
 .form-login-sigin__link{
 		color:$white;
