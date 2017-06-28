@@ -5,5 +5,10 @@ header.header
 				i.fa.fa-paper-plane(aria-hidden='true') 
 					a(href="/") Супер сайт
 			.nav-top__login
-				a(href="#") Регистрация
+				if title == 'Страница входа'
+					a(href='signin-page.html') Регистрация 
+				else
+					a(href='login-page.html') Вход
+			
+
 		
