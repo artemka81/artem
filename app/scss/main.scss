@@ -8,7 +8,11 @@
 
 
 // Blocks
+@import "blocks/_header.scss";
 @import "blocks/_nav-top.scss";
 @import "blocks/_form-login.scss";
 @import "blocks/_footer.scss";
 @import "blocks/_button.scss";
+
+// Index
+@import "blocks/_content.scss";

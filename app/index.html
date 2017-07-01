@@ -20,16 +20,28 @@
     <header class="header">
       <div class="container-fluid">
         <nav class="nav-top">
-          <div class="nav-top__title"><i class="fa fa-paper-plane" aria-hidden="true"> <a href="/">Супер сайт</a></i></div>
+          <div class="nav-top__title"><i class="fa fa-paper-plane" aria-hidden="true"> <a href="/">Digital Lifestyle</a></i></div>
           <div class="nav-top__login"><a href="login-page.html">Вход</a>
           </div>
-        </nav>
+        </nav><span class="header__description">Сайт IT специалиста</span>
+        <nav class="header__nav"><a class="active" href="#">Главная</a><a href="#">Обо мне </a><a href="#">Работы</a><a href="#">Блог</a><a href="#">Контакты</a></nav>
       </div>
     </header>
-    <h1>Главная страница</h1><a class="btn-primary btn" href="/login-page.html">Страница входа</a>
-    <footer class="footer">
-      <p class="footer__copy">© Артём Кихтенко<br/>Сделано с <i class="fa fa-heart" aria-hidden="true"> </i>в  <span><a href="webCademy.ru">WebCademy.ru</a></span> в 2017 году</p>
-    </footer><!-- build:vendorJs js/vendor.js -->
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3"><img class="content__avatar" src="../img/avatar.jpg" alt="Фото автора сайта"/></div>
+          <div class="col-md-9">
+            <h1 class="content__h1">Емельян Казаков</h1>
+            <p class="content__about">Я веб разработчик из Казани. Мне 28 лет.<br/>Занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
+            <p class="content__about">Этот сайт я сделал в рамках обучения в школе онлайн обучения WebCademy. <br/>Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
+            <h2 class="content__h2"></h2>
+            <p class="content__about">Меня привлекет Frontend разработка, это не только моя работа, но и хобби.<br/>Также знаком и могу решать не сложные задачи на Backend.</p>
+            <p class="content__about">Знаком и использую современный workflow, работаю с репозиториями git и сборкой проекта на gulp.</p><a class="btn-primary btn" href="#">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- build:vendorJs js/vendor.js -->
     <script src="/bower/jquery/dist/jquery.min.js" defer="defer"></script><!-- endbuild -->
 <!-- build:userJs js/user.js -->
     <script src="/js/main.js" defer="defer"></script><!-- endbuild -->

@@ -4,10 +4,36 @@ block variables
 	- var title = 'Главная страница'
 
 block content
+	include ./blocks/_header.pug
+	section.content
+		.container
+			.row
+				.col-md-3
+					img.content__avatar(src="../img/avatar.jpg" alt="Фото автора сайта")
+				.col-md-9
+					h1.content__h1 Емельян Казаков
+					p.content__about
+						|Я веб разработчик из Казани. Мне 28 лет.
+						br 
+						|Занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+					p.content__about
+						|Этот сайт я сделал в рамках обучения в школе онлайн обучения WebCademy. 
+						br
+						|Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+					h2.content__h2
+					p.content__about
+						|Меня привлекет Frontend разработка, это не только моя работа, но и хобби.
+						br
+						|Также знаком и могу решать не сложные задачи на Backend.
+					p.content__about
+						|Знаком и использую современный workflow, работаю с репозиториями git и сборкой проекта на gulp.
+					+button("Подробнее", "#")(class="btn-primary")
+	include ./blocks/_footer2.pug
 	
-	h1 Главная страница
+	
+	
 
-	+button("Страница входа", "/login-page.html")(class="btn-primary")
+	//- +button("Страница входа", "/login-page.html")(class="btn-primary")
 	//- +button("Кнопка 2", "/other-page.html")
 
 

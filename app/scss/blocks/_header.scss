@@ -1,0 +1,55 @@
+@import "bourbon";
+.header{
+	background-color:$bg-header-color;
+	min-height:200px;
+	background-image: url("../img/BG_index.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	padding:rem(20px);
+	&__description{
+		display: inline-block;
+		padding: 8px 0 8px 30px;
+		font-size: 14px;
+		color:$header-color-description;
+	}
+	&__nav{
+		display: flex;
+		flex-direction: column;
+		margin-left: 30px;
+		a{
+			padding-top: 2px;
+			color:$header-color-nav;
+			font-weight: 600;
+			flex-grow:1;
+			&:hover{
+				text-decoration:none;
+
+			}
+
+		}
+	}
+}
+.active{
+				text-decoration:none;
+			}
+
+/* Для экранов с шириной 767px и более. */
+@media only screen and (min-width : 767px) {
+	.header{
+		padding:rem(40px);
+		&__description{
+			font-size: 16px;
+			padding: 8px 0 0 54px;
+			margin-bottom: 34px;
+		}
+		&__nav{
+			flex-direction: row;
+			margin-left: 54px;
+			a{
+				font-size: 18px;
+				flex-grow:0;
+				margin-right: 50px;
+			}
+		}
+	}
+}
