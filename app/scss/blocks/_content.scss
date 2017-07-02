@@ -1,18 +1,107 @@
-.content{
+@import "bourbon";
+.content, .works, .blog{
 	background: $white;
+	padding: 40px 0;
+}
+.content{
+	border-bottom:1px solid $content-line;
 	&__avatar{
-		border-radius:100px;
+		display: block;
+    border-radius:100px;
 		width: 200px;
 		height: 200px;
+		margin: 0 auto;
+	}
+	&__h1{
+		color:$content-color-h1;
+		font-weight: 900;
+	}
+	&__h2{
+		font-weight: 800;
+	}
+	&__about{
+		line-height: 1.6;
+	}
+}
+
+.works{
+	&__title, .blog__title{
+		padding-left:14px;
+		padding-bottom: 30px;
+		font-weight: 800;
+		font-size: 28px;
+	}
+	&__link, .blog__link{
+		color:$base-color;
+	}
+	&__item{
+		width: 360px;
+		height: 360px;
+		border-radius:8px;
+		box-shadow:0 0 40px rgba(99,117,138,0.4);
+		margin-bottom: 40px;
+		position: relative;
+	  transition:0.8s 0.1s ease;
+
+		&:hover {
+	 		box-shadow:0 0 0px rgba(99,117,138, 0);
+	 		cursor:pointer;
+	 	}
+	}
+	&__item-img{
+		border-radius:8px 8px 0 0;
+		width: 360px;
+		height: auto;
+	}
+	&__item-desc{
+		position:absolute;
+		width: 100%;
+		padding: 22px;
+		background: white;
+		bottom: 0;
+		left: 0;
+		border-radius:0px 0px 8px 8px;
+
+	}
+	&__item-title, .blog__item-title{
+		font-size: 22px;
+		margin: 0 0 20px 0;
+	}
+
+}
+
+.blog{
+	&__item{
+		padding: 20px;
+		width: 360px;
+		height: 360px;
+		border-radius:8px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		box-shadow:0 0 40px rgba(99,117,138,0.4);
+		margin-bottom: 40px;
+		transition:0.8s 0.1s ease;
+			&:hover {
+		 		box-shadow:0 0 0px rgba(99,117,138, 0);
+		 		cursor:pointer;
+		 	}
+	}
+	&__item-img{
+		border-radius:8px;
+		width: 320px;
 	}
 }
 
 /* Для экранов с шириной 767px и более. */
 @media only screen and (min-width : 767px) {
-	.content{
-		&__avatar, &__h1{
-		margin-top:80px; 
-
+	.content, .works{
+		padding: 80px 0;
 	}
-}
+	.content{
+		&__h1{
+			font-size: 28px;
+
+		}
+	}
 }

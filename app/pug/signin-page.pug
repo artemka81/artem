@@ -5,7 +5,8 @@ block variables
 	- var header = 'Регистрация'
 	
 block content
-	include ./blocks/_nav-top.pug
+	header.login__header
+		include ./blocks/_nav-top.pug
 	section.login
 	include ./blocks/_form.pug
 	include ./blocks/_footer.pug

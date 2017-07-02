@@ -24,7 +24,7 @@
           <div class="nav-top__login"><a href="login-page.html">Вход</a>
           </div>
         </nav><span class="header__description">Сайт IT специалиста</span>
-        <nav class="header__nav"><a class="active" href="#">Главная</a><a href="#">Обо мне </a><a href="#">Работы</a><a href="#">Блог</a><a href="#">Контакты</a></nav>
+        <nav class="header__nav"><a class="active" href="/">Главная</a><a href="/about.html">Обо мне</a><a href="/works.html">Работы</a><a href="/blog.html">Блог</a><a href="/contact.html">Контакты</a></nav>
       </div>
     </header>
     <section class="content">
@@ -35,12 +35,68 @@
             <h1 class="content__h1">Емельян Казаков</h1>
             <p class="content__about">Я веб разработчик из Казани. Мне 28 лет.<br/>Занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.</p>
             <p class="content__about">Этот сайт я сделал в рамках обучения в школе онлайн обучения WebCademy. <br/>Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!</p>
-            <h2 class="content__h2"></h2>
+            <h2 class="content__h2">Что я умею</h2>
             <p class="content__about">Меня привлекет Frontend разработка, это не только моя работа, но и хобби.<br/>Также знаком и могу решать не сложные задачи на Backend.</p>
-            <p class="content__about">Знаком и использую современный workflow, работаю с репозиториями git и сборкой проекта на gulp.</p><a class="btn-primary btn" href="#">Подробнее</a>
+            <p class="content__about">Знаком и использую современный workflow, работаю с репозиториями git и сборкой проекта на gulp.</p><a class="btn__content btn" href="/about.html">Подробнее</a>
           </div>
         </div>
       </div>
+    </section>
+    <section class="works">
+      <div class="container">
+        <div class="row">
+          <div class="works__title"> <span>Новые </span><a class="works__link" href="#">работы </a></div>
+          <div class="col-md-4">
+            <div class="works__item"><a class="works__item-link" href="#"><img class="works__item-img" src="../img/work-img-1.jpg" alt="Название работы"/></a>
+              <div class="works__item-desc">
+                <p class="works__item-title">Верстка Landing Page</p><a class="btn__small btn" href="/works.html">Смотреть кейс</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="works__item"><a class="works__item-link" href="#"><img class="works__item-img" src="../img/work-img-2.jpg" alt="Название работы"/></a>
+              <div class="works__item-desc">
+                <p class="works__item-title">Верстка UI набора</p><a class="btn__small btn" href="/works.html">Смотреть кейс</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="works__item"><a class="works__item-link" href="#"><img class="works__item-img" src="../img/work-img-3.jpg" alt="Название работы"/></a>
+              <div class="works__item-desc">
+                <p class="works__item-title">Верстка интернет магазина</p><a class="btn__small btn" href="/works.html">Смотреть кейс</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="blog">
+        <div class="container">
+          <div class="row">
+            <div class="blog__title"><span>Новые записи в </span><a class="blog__link" href="#">блоге</a></div>
+            <div class="col-md-4">
+              <div class="blog__item"><a class="blog__item-link" href="#"><img class="blog__item-img" src="../img/blog-img-1.jpg" alt="Название поста"/></a>
+                <div class="blog__item-desc">
+                  <p class="blog__item-title">Поездка в New York</p><a class="btn__small btn" href="/blog.html">Читать</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog__item"><a class="blog__item-link" href="#"><img class="blog__item-img" src="../img/blog-img-2.jpg" alt="Название поста"/></a>
+                <div class="blog__item-desc">
+                  <p class="blog__item-title">Что я делал в долине</p><a class="btn__small btn" href="/blog.html">Читать</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog__item"><a class="blog__item-link" href="#"><img class="blog__item-img" src="../img/blog-img-3.jpg" alt="Название поста"/></a>
+                <div class="blog__item-desc">
+                  <p class="blog__item-title">Как я ходил в поход этим летом</p><a class="btn__small btn" href="/blog.html">Читать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section><!-- build:vendorJs js/vendor.js -->
     <script src="/bower/jquery/dist/jquery.min.js" defer="defer"></script><!-- endbuild -->
 <!-- build:userJs js/user.js -->

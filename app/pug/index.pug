@@ -20,14 +20,69 @@ block content
 						|Этот сайт я сделал в рамках обучения в школе онлайн обучения WebCademy. 
 						br
 						|Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
-					h2.content__h2
+					h2.content__h2 Что я умею
 					p.content__about
 						|Меня привлекет Frontend разработка, это не только моя работа, но и хобби.
 						br
 						|Также знаком и могу решать не сложные задачи на Backend.
 					p.content__about
 						|Знаком и использую современный workflow, работаю с репозиториями git и сборкой проекта на gulp.
-					+button("Подробнее", "#")(class="btn-primary")
+					+button("Подробнее", "/about.html")(class="btn__content")
+	section.works
+		.container
+			.row
+				.works__title 
+					span Новые 
+					a.works__link(href="#") работы 
+				.col-md-4
+					.works__item
+						a.works__item-link(href="#")
+							img.works__item-img(src="../img/work-img-1.jpg" alt="Название работы")
+						.works__item-desc
+							p.works__item-title Верстка Landing Page
+							+button("Смотреть кейс", "/works.html")(class="btn__small")
+				.col-md-4
+					.works__item
+						a.works__item-link(href="#")
+							img.works__item-img(src="../img/work-img-2.jpg" alt="Название работы")
+						.works__item-desc
+							p.works__item-title Верстка UI набора
+							+button("Смотреть кейс", "/works.html")(class="btn__small")
+				.col-md-4
+					.works__item
+						a.works__item-link(href="#")
+							img.works__item-img(src="../img/work-img-3.jpg" alt="Название работы")
+						.works__item-desc
+							p.works__item-title Верстка интернет магазина
+							+button("Смотреть кейс", "/works.html")(class="btn__small")
+		section.blog
+			.container
+				.row
+					.blog__title
+						span Новые записи в 
+						a.blog__link(href="#") блоге
+					.col-md-4
+						.blog__item
+							a.blog__item-link(href="#")
+								img.blog__item-img(src="../img/blog-img-1.jpg" alt="Название поста")
+							.blog__item-desc
+								p.blog__item-title Поездка в New York
+								+button("Читать", "/blog.html")(class="btn__small")
+					.col-md-4
+						.blog__item
+							a.blog__item-link(href="#")
+								img.blog__item-img(src="../img/blog-img-2.jpg" alt="Название поста")
+							.blog__item-desc
+								p.blog__item-title Что я делал в долине
+								+button("Читать", "/blog.html")(class="btn__small")
+					.col-md-4
+						.blog__item
+							a.blog__item-link(href="#")
+								img.blog__item-img(src="../img/blog-img-3.jpg" alt="Название поста")
+							.blog__item-desc
+								p.blog__item-title Как я ходил в поход этим летом
+								+button("Читать", "/blog.html")(class="btn__small")
+
 	include ./blocks/_footer2.pug
 	
 	

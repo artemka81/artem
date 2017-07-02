@@ -1,5 +1,5 @@
 .btn{
-	
+	display: inline-block;
 	background-color:$btn-white;
 	line-height: rem(32px);
 	color:$btn-text-color;
@@ -8,6 +8,12 @@
 	text-decoration: none;
 	padding: 14px 42px;
 	border-radius:50px;
-	box-shadow:4px 6px 16px $btn-shadow;
-
+	&__primary{
+		box-shadow:4px 6px 16px $btn-shadow;
+	}
+	&__content, &__small{
+		border:2px solid #dde8ee;
+	}
+	&__content{padding: 10px 30px;}
+	&__small{padding: 6px 30px;}
 }

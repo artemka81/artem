@@ -4,7 +4,8 @@ block variables
 	- var title  = 'Страница входа'
 	- var header = 'Вход на сайт'
 block content
-	include ./blocks/_nav-top.pug
+	header.login__header
+		include ./blocks/_nav-top.pug
 	section.login
 	include ./blocks/_form.pug
 	include ./blocks/_footer.pug
