@@ -3,10 +3,6 @@ extends ./templates/_template.pug
 block variables
 	- var title = 'Главная страница'
 
-
-
-
-
 block content
 	include ./blocks/_header.pug
 	section.content
@@ -57,7 +53,6 @@ block content
 						+blog-item("Что я делал в долине","../img/blog-img-2.jpg")
 					.col-md-4
 						+blog-item("Как я ходил в поход этим летом","../img/blog-img-3.jpg")
-						
 
 	include ./blocks/_footer2.pug
 	

@@ -1,0 +1,45 @@
+.footer2{
+	line-height: 1.6;
+	background: $footer2-bg;
+	padding: 50px 0;
+	&__copy{
+		
+		color:white;
+	}
+	&__link{
+		color:white;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	&__nav{
+		
+		padding-top:20px; 
+		a{
+			display: block;
+			color:white;
+			text-decoration: none;
+			padding: 0 0 10px 0;
+		}
+	}
+	&__icon{
+		color:white;
+		font-size: 32px;
+		padding:20px 38px 0 0;
+		&:hover{
+			color:$footer2-icon-hover !important;
+		}
+	}
+}
+.color{
+	color:$footer2-heard-color !important;
+}
+
+/* Для экранов с шириной 767px и более. */
+@media only screen and (min-width : 767px) {
+	.footer2{
+		&__nav{
+		margin: 0 auto;
+		width: 100px;
+		}
+	}
+}
