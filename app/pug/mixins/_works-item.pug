@@ -1,0 +1,7 @@
+mixin work-item(text, img)
+	.works__item
+		a.works__item-link(href="#")
+			img.works__item-img(src= img alt="Название работы")
+		.works__item-desc
+			p.works__item-title= text
+			+button("Смотреть кейс", "/works.html")(class="btn__small")

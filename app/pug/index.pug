@@ -3,6 +3,10 @@ extends ./templates/_template.pug
 block variables
 	- var title = 'Главная страница'
 
+
+
+
+
 block content
 	include ./blocks/_header.pug
 	section.content
@@ -35,26 +39,12 @@ block content
 					span Новые 
 					a.works__link(href="#") работы 
 				.col-md-4
-					.works__item
-						a.works__item-link(href="#")
-							img.works__item-img(src="../img/work-img-1.jpg" alt="Название работы")
-						.works__item-desc
-							p.works__item-title Верстка Landing Page
-							+button("Смотреть кейс", "/works.html")(class="btn__small")
+					+work-item("Верстка Landing Page","../img/work-img-1.jpg")
 				.col-md-4
-					.works__item
-						a.works__item-link(href="#")
-							img.works__item-img(src="../img/work-img-2.jpg" alt="Название работы")
-						.works__item-desc
-							p.works__item-title Верстка UI набора
-							+button("Смотреть кейс", "/works.html")(class="btn__small")
+					+work-item("Верстка UI набора","../img/work-img-2.jpg")
 				.col-md-4
-					.works__item
-						a.works__item-link(href="#")
-							img.works__item-img(src="../img/work-img-3.jpg" alt="Название работы")
-						.works__item-desc
-							p.works__item-title Верстка интернет магазина
-							+button("Смотреть кейс", "/works.html")(class="btn__small")
+					+work-item("Верстка интернет магазина","../img/work-img-3.jpg")
+
 		section.blog
 			.container
 				.row
@@ -62,36 +52,13 @@ block content
 						span Новые записи в 
 						a.blog__link(href="#") блоге
 					.col-md-4
-						.blog__item
-							a.blog__item-link(href="#")
-								img.blog__item-img(src="../img/blog-img-1.jpg" alt="Название поста")
-							.blog__item-desc
-								p.blog__item-title Поездка в New York
-								+button("Читать", "/blog.html")(class="btn__small")
+						+blog-item("Поездка в New York","../img/blog-img-1.jpg")
 					.col-md-4
-						.blog__item
-							a.blog__item-link(href="#")
-								img.blog__item-img(src="../img/blog-img-2.jpg" alt="Название поста")
-							.blog__item-desc
-								p.blog__item-title Что я делал в долине
-								+button("Читать", "/blog.html")(class="btn__small")
+						+blog-item("Что я делал в долине","../img/blog-img-2.jpg")
 					.col-md-4
-						.blog__item
-							a.blog__item-link(href="#")
-								img.blog__item-img(src="../img/blog-img-3.jpg" alt="Название поста")
-							.blog__item-desc
-								p.blog__item-title Как я ходил в поход этим летом
-								+button("Читать", "/blog.html")(class="btn__small")
+						+blog-item("Как я ходил в поход этим летом","../img/blog-img-3.jpg")
+						
 
 	include ./blocks/_footer2.pug
 	
-	
-	
 
-	//- +button("Страница входа", "/login-page.html")(class="btn-primary")
-	//- +button("Кнопка 2", "/other-page.html")
-
-
-	//- +blog-post-preview("Название поста 1", "img/blog/01-prev.jpg")
-	//- +blog-post-preview("Название поста 2", "img/blog/01-prev.jpg")
-	//- +blog-post-preview("Название поста 3", "img/blog/01-prev.jpg")
