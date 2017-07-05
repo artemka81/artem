@@ -14,12 +14,14 @@
 			}
 		}
 	}
-	&__login{
-		a{
+	&__login-link{
 			color:$white;
 			font-size: rem(16px);
+		&:first-child{
+			padding-right:30px; 
 		}
 	}
+	
 }
 
 
@@ -32,7 +34,7 @@
 			padding-left:12px; 
 		}
 	}
-	.nav-top__login a{
+	.nav-top__login-link{
 		line-height:2.5;
 	}
 	

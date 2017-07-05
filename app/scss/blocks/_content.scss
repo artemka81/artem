@@ -41,12 +41,7 @@
 		box-shadow:0 0 40px rgba(99,117,138,0.4);
 		margin-bottom: 40px;
 		position: relative;
-	  transition:0.8s 0.1s ease;
 
-		&:hover {
-	 		box-shadow:0 0 0px rgba(99,117,138, 0);
-	 		cursor:pointer;
-	 	}
 	}
 	&__item-img{
 		border-radius:8px 8px 0 0;
@@ -81,11 +76,7 @@
 		justify-content: space-between;
 		box-shadow:0 0 40px rgba(99,117,138,0.4);
 		margin-bottom: 40px;
-		transition:0.8s 0.1s ease;
-			&:hover {
-		 		box-shadow:0 0 0px rgba(99,117,138, 0);
-		 		cursor:pointer;
-		 	}
+	
 	}
 	&__item-img{
 		border-radius:8px;

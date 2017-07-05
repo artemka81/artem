@@ -1,9 +1,10 @@
 .footer2{
 	line-height: 1.6;
 	background: $footer2-bg;
-	padding: 50px 0;
+	padding: 60px 0;
 	&__copy{
-		
+		padding-bottom:8px;
+		margin: 0; 
 		color:white;
 	}
 	&__link{
@@ -13,7 +14,6 @@
 	}
 	&__nav{
 		
-		padding-top:20px; 
 		a{
 			display: block;
 			color:white;
@@ -24,7 +24,7 @@
 	&__icon{
 		color:white;
 		font-size: 32px;
-		padding:20px 38px 0 0;
+		padding:0 38px 0 0;
 		&:hover{
 			color:$footer2-icon-hover !important;
 		}
