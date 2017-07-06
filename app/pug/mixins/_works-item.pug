@@ -1,6 +1,6 @@
-mixin work-item(text, img)
+mixin work-item(text, img, link)
 	.works__item
-		a.works__item-link(href="#")
+		a.works__item-link(href="/" + link)
 			img.works__item-img(src= img alt="Название работы")
 		.works__item-desc
 			p.works__item-title= text

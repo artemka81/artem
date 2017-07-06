@@ -1,7 +1,7 @@
 @import "bourbon";
 .content, .works, .blog{
 	background: $white;
-	padding: 40px 0;
+	padding: 50px 0;
 }
 .content{
 	border-bottom:1px solid $content-line;
@@ -24,13 +24,20 @@
 	}
 }
 
-.works{
-	&__title, .blog__title{
+.works, .blog{
+	&__title{
 		padding-left:14px;
 		padding-bottom: 30px;
 		font-weight: 800;
 		font-size: 28px;
 	}
+	&__title-h1{
+		padding-left:14px;
+		padding-bottom: 30px;
+		font-weight: 800;
+		font-size: 28px;
+	}
+
 	&__link, .blog__link{
 		color:$base-color;
 	}
@@ -86,7 +93,7 @@
 
 /* Для экранов с шириной 767px и более. */
 @media only screen and (min-width : 767px) {
-	.content, .works{
+	.content, .blog{
 		padding: 80px 0;
 	}
 	.content{

@@ -41,18 +41,18 @@ block content
 				.col-md-4
 					+work-item("Верстка интернет магазина","../img/work-img-3.jpg")
 
-		section.blog
-			.container
-				.row
-					.blog__title
-						span Новые записи в 
-						a.blog__link(href="#") блоге
-					.col-md-4
-						+blog-item("Поездка в New York","../img/blog-img-1.jpg")
-					.col-md-4
-						+blog-item("Что я делал в долине","../img/blog-img-2.jpg")
-					.col-md-4
-						+blog-item("Как я ходил в поход этим летом","../img/blog-img-3.jpg")
+	section.blog
+		.container
+			.row
+				.blog__title
+					span Новые записи в 
+					a.blog__link(href="/blog-page.html") блоге
+				.col-md-4
+					+blog-item("Поездка в New York","../img/blog-img-1.jpg")
+				.col-md-4
+					+blog-item("Что я делал в долине","../img/blog-img-2.jpg")
+				.col-md-4
+					+blog-item("Как я ходил в поход этим летом","../img/blog-img-3.jpg")
 
 	include ./blocks/_footer2.pug
 	

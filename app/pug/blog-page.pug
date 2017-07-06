@@ -1,0 +1,33 @@
+extends ./templates/_template.pug
+
+block variables
+	- var title  = 'Страница блога'
+
+	
+block content
+	include ./blocks/_header.pug
+	section.blog
+		.container
+			.row
+				h1.blog__title-h1 Блог веб-разработчика
+				.col-md-4
+					+blog-item("Поездка в New York","../img/blog-img-1.jpg", "blog/post1.html")
+				.col-md-4
+					+blog-item("Что я делал в долине","../img/blog-img-2.jpg", "blog/post2.html")
+				.col-md-4
+					+blog-item("Как я ходил в поход этим летом","../img/blog-img-3.jpg", "blog/post3.html")
+				.col-md-4
+					+blog-item("Поездка в New York пример длинного названия поста...","../img/blog-img-1.jpg", "blog/post4.html")
+				.col-md-4
+					+blog-item("Поездка в New York","../img/blog-img-2.jpg", "blog/post5.html")
+				.col-md-4
+					+blog-item("Как я ходил в поход этим летом","../img/blog-img-3.jpg", "blog/post6.html")
+				.col-md-4.col-sm-3
+					+blog-item("Поездка в New York","../img/blog-img-1.jpg", "blog/post7.html")
+				.col-md-4
+					+blog-item("Поездка в New York","../img/blog-img-2.jpg", "blog/post8.html")
+				.col-md-4
+					+blog-item("Поездка в New York","../img/blog-img-3.jpg", "blog/post9.html")
+
+	include ./blocks/_footer2.pug
+		
