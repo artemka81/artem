@@ -1,0 +1,25 @@
+extends ./templates/_template.pug
+
+block variables
+	- var title  = 'Страница блога'
+
+	
+block content
+	include ./blocks/_header.pug
+	section.post
+		.container
+			.row
+				.col-md-10.col-md-offset-1
+					actile.post-item
+						h1.post__item-title Национальный парк Йосемити
+						span.post__item-author Емельян Казаков
+						a.post__item-cat(href="#") Путешествия
+						span.post__item-date 16 Марта 2017
+						span.post__item-comments 2 комментария
+						img.post__item-img(src="../img/post-img.jpg", alt="")
+
+
+				
+
+	include ./blocks/_footer2.pug
+		

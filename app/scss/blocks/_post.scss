@@ -1,0 +1,36 @@
+.post{
+	
+	&__item{
+		
+		&-author, &-cat, &-date,  &-comments{
+			font-size: 14px;
+		}
+		&__title{
+			font-weight: 800;
+			font-size: 28px;
+		}
+		&-author{
+			padding-right: 40px;
+		}
+		&-cat, &-date{
+			font-weight: 600;
+			padding-right: 20px;
+		}
+		&-cat{
+			color:$post-cat-color;
+			text-decoration: none;
+		}
+		&-date{
+			color:$post-date-color;
+		}
+		&-comments{
+			color:$post-comments-color;
+		}
+		&-img{
+			margin: 20px 0 40px 0;
+			width: 100%;
+    	height: auto;
+		}
+	}
+	
+}

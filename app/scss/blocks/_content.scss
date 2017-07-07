@@ -1,7 +1,8 @@
 @import "bourbon";
-.content, .works, .blog{
+.content, .works, .blog, .post{
 	background: $white;
 	padding: 50px 0;
+	flex-grow: 1;
 }
 .content{
 	border-bottom:1px solid $content-line;
@@ -38,7 +39,7 @@
 		font-size: 28px;
 	}
 
-	&__link, .blog__link{
+	&__link{
 		color:$base-color;
 	}
 	&__item{
