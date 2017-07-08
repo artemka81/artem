@@ -1,19 +1,18 @@
 .btn{
-	display: inline-block;
+	display: inline-block;	
 	background-color:$btn-white;
-	line-height: rem(32px);
+	line-height: 32px;
 	color:$btn-text-color;
 	font-weight: bold;
-	font-size: rem(16px);
+	font-size: 16px;
 	text-decoration: none;
 	margin-top: 20px;
 	padding: 10px 42px;
 	border-radius:50px;
-	transition:0.4s 0.1s ease;
 	&__primary{
 		box-shadow:4px 6px 16px $btn-shadow;
 	}
-	&__content, &__small{
+	&__content, &__small, &__small-arrow-left, &__small-arrow-right{
 		border:2px solid #dde8ee;
 		&:hover{
 			background: $btn-text-color;
@@ -22,5 +21,41 @@
 		}
 	}
 	&__content{padding: 10px 30px;}
-	&__small{padding: 6px 30px;}
+	&__small{
+		padding: 6px 30px;
+		&-arrow-left, &-arrow-right{
+			border:2px solid #dde8ee;
+			position:relative;
+				
+			&::before{
+				font-family: FontAwesome;
+    		font-style: normal;
+    		font-weight: normal;
+    		text-decoration: inherit;
+				color:$btn-text-color;
+		    font-size: 18px;
+    		position: absolute;
+			}
+			&:hover::before{
+    			color:white;
+    		}
+		}
+		&-arrow-left{
+			padding: 6px 30px 6px 46px;
+			&::before{
+				content:"\f177";
+				top: 7px;
+    		left: 20px;
+    	}
+    }
+			
+    &-arrow-right{
+    	padding: 6px 46px 6px 30px;
+			&::before{
+				content:"\f178";
+				top: 7px;
+    		right: 20px;
+    	}			
+		}
+	}
 }

@@ -1,0 +1,9 @@
+mixin post-comments(name, text, link)
+	.post-comments
+		.post-comments__wrapper-img
+			img.post-comments__img(src= link, alt="")
+		.post-comments__wrapper
+			p.post-comments__author= name
+			p.post-comments__data 05 Мая 2017 года в 15:45
+			.post-comments__text= text
+				

@@ -4,13 +4,13 @@
 	padding: 50px 0;
 	flex-grow: 1;
 }
+.post{
+	padding-bottom: 120px;
+}
 .content{
 	border-bottom:1px solid $content-line;
 	&__avatar{
-		display: block;
-    border-radius:100px;
-		width: 200px;
-		height: 200px;
+		@include circle(200px, 200px);
 		margin: 0 auto;
 	}
 	&__h1{

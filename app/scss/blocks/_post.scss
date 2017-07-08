@@ -2,7 +2,7 @@
 	
 	&__item{
 		
-		&-author, &-cat, &-date,  &-comments{
+		&-author, &-cat, &-date,  &-comments-num{
 			font-size: 14px;
 		}
 		&__title{
@@ -23,14 +23,31 @@
 		&-date{
 			color:$post-date-color;
 		}
-		&-comments{
+		&-comments-num{
+			font-weight: 600;
 			color:$post-comments-color;
 		}
 		&-img{
-			margin: 20px 0 40px 0;
+			margin: 20px 0;
 			width: 100%;
     	height: auto;
 		}
+		&-text{
+			margin: 0;
+			padding: 10px 0;
+			line-height: 32px;
+		}
+		&-nav{
+			display: flex;
+			justify-content:space-between;
+			margin-bottom: 38px;
+		}
+		&-comments-num-big{
+			display: inline-block;
+			font-size: 26px;
+			font-weight: 600;
+			margin-bottom: 28px;
+		}
 	}
-	
 }
+
